@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <!-- nom du person -->
+<label for = "txtNom"> Nom : </label> 
+  <input type = "text" id = "txtNom">
+
+
+<!-- Radio button -->
+  <br><br><br><br>
+<lable for = "sportPr"> Ton sport preferer : </lable>
+  <br>
+<input type = "radio" name = "sport" id = "favSport" value = "Hockey">hockey
+  <br>
+  <input type = "radio" name = "sport" id = "favSport" value = "Football"> Football
+  <br>
+  <input type = "radio" name = "sport" id = "favSport" value = "Baseball"> Baseball
+<br>
+  <input type = "radio" name = "sport" id = "favSport" value = "Golf"> Golf
+<!-- Check box -->
+<br><br>
+  <label for = "ChckMath"> Cest quoi 5 + 6? </label>
+  <br>
+<input type = "checkbox" id = "chckMath" name = "math" value = "10">10
+  <br> 
+  <input type = "checkbox" id = "chckMath" name = "math" value = "13">13
+  <br>
+  <input type = "checkbox" id = "chckMath" name = "math" value = "11">11
+  <br>
+  <input type = "checkbox" id = "chckMath" name = "math" value = "15">15
+
+  <!-- Select -->
+  <br><br>
+<label for = "selAnee"> Anee de naissance : </label>
+<select id="selAnee">
+   <option value="2000">2000</option>
+   <option value="2001">2001</option>
+   <option value="2002">2002</option>
+   <option value="2003">2003</option>
+   <option value="2004">2004</option>
+   <option value="2005">2005</option>
+</select>
+
+
+  
+  <!-- Creation dun button soumettre -->
+  <br><br><br><br>
+<input type="button" id="btnSoumet" onclick=" comfirmSou() " value="soumettre Le quiz " >
+  <div id="afficheResul">
+  </div>
+  
+  <script src="java/quiz.js"></script>
+</body>
+
+</html>
