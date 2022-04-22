@@ -1,4 +1,4 @@
-var resultaSport = "" ;
+r resultaSport = "" ;
 var afiche = "" ;
 var message = "" ;
 var tblNom = "" ;
@@ -8,7 +8,9 @@ function comfirmSou(){
        var Sport = "";
            if (resultaSport[0].checked) {
                Sport = resultaSport[0].value;
-           } 
+           } //end if
+  console.log( Sport ) ; 
+
 
   //Pour déterminer lesquels des checkbox sont cochés
 var chckMath = document.getElementsByName("math");
@@ -18,6 +20,7 @@ var messageBonjour = "";
     }
        //Chercher les données select dans le formulaire
        var ecole = document.getElementById("selAnee").value;
-  console.log(Sport + chckMath + selAnee.value ) ; 
-
+  message = (Sport + chckMath + selAnee.value ) ; 
+var affiche = document.getElementById("afficheResul")
+  affiche.innerHTML = message ; 
 }
