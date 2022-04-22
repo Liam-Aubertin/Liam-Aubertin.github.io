@@ -5,37 +5,38 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="quiz.js"></script>
 </head>
 
 <body>
+  <form>
   <!-- nom du person -->
 <label for = "txtNom"> Nom : </label> 
-  <input type = "text" id = "txtNom">
+  <input type = "text" id = "txtNom"/>
 
 
 <!-- Radio button -->
   <br><br><br><br>
-<lable for = "sportPr"> Ton sport preferer : </lable>
+<label for = "sportPr"> Ton sport preferer : </label>
   <br>
-<input type = "radio" name = "sport" id = "favSport" value = "Hockey">hockey
+<input type = "radio" name = "sport" id = "favSport" value = "Hockey"/>hockey
   <br>
-  <input type = "radio" name = "sport" id = "favSport" value = "Football"> Football
+  <input type = "radio" name = "sport" id = "favSport" value = "Football"/> Football
   <br>
-  <input type = "radio" name = "sport" id = "favSport" value = "Baseball"> Baseball
+  <input type = "radio" name = "sport" id = "favSport" value = "Baseball"/> Baseball
 <br>
-  <input type = "radio" name = "sport" id = "favSport" value = "Golf"> Golf
+  <input type = "radio" name = "sport" id = "favSport" value = "Golf"/> Golf
 <!-- Check box -->
 <br><br>
   <label for = "ChckMath"> Cest quoi 5 + 6? </label>
   <br>
-<input type = "checkbox" id = "chckMath" name = "math" value = "10">10
+<input type = "checkbox" id = "chckMath" name = "math" value = "10"/>10
   <br> 
-  <input type = "checkbox" id = "chckMath" name = "math" value = "13">13
+  <input type = "checkbox" id = "chckMath" name = "math" value = "13"/>13
   <br>
-  <input type = "checkbox" id = "chckMath" name = "math" value = "11">11
+  <input type = "checkbox" id = "chckMath" name = "math" value = "11"/>11
   <br>
-  <input type = "checkbox" id = "chckMath" name = "math" value = "15">15
+  <input type = "checkbox" id = "chckMath" name = "math" value = "15"/>15
 
   <!-- Select -->
   <br><br>
@@ -53,11 +54,11 @@
   
   <!-- Creation dun button soumettre -->
   <br><br><br><br>
-<input type="button" id="btnSoumet" onclick=" comfirmSou() " value="soumettre Le quiz " >
+<input type="button" id="btnSoumet" onclick="comfirmSou()" value="soumettre Le quiz "> </input> 
   <div id="afficheResul">
   </div>
   
-  <script src="java/quiz.js"></script>
+  </form>
 </body>
 
 </html>

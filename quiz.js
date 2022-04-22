@@ -1,9 +1,10 @@
-r resultaSport = "" ;
+var resultaSport = "" ;
 var afiche = "" ;
 var message = "" ;
 var tblNom = "" ;
 
 function comfirmSou(){
+  alert("bonjour") ;
   var resultaSport = document.getElementsByName("sport") ;
        var Sport = "";
            if (resultaSport[0].checked) {
