@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="CSS\commerce.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  
+  <!-- le nom du companie-->
+  <center><h1> Le soucre pour tech </h1></center>
+  <hr>
+  
+  <!-- discription de notre compagnie -->
+     <p> <br> <h4>description : </h4> Notre entreprise vend des 
+ outils technologiques dont les gens ont besoin au quotidien et qui 
+ sont faciles à trouver.Aussi, que on veut donner le meilluere 
+ service a offire au public et donner du support 24/7. </p>
+
+  <!--  creation du tableu de Poduit ex.. -->  
+    <table>
+    <br><br>
+      <tr>
+        <th scope = "col"> Produit : </th>
+        <th scope = "col"> Prix : </th>
+        <th scope = "col"> Quantité: </th>
+        <th scope = "col"> photo: </th>
+      </tr>
+      <tr>
+        <th scope = "row"> Iphone 13: </th>
+          <td> 799$ </td>
+          <td><input type="number" id= "quaI" min="0" max="15"   
+ value="0" step="1" onkeypress="return false;" /></td> 
+        <td><img src="img/iphone.jfif" width = "100" height = "100"></td>
+      </tr>
+       <tr>
+        <th scope = "row"> Laptop Asus: </th>
+          <td> 399$ </td>
+          <td><input type="number"  id= "quaL" min="0" max="15" 
+ value="0" step="1" onkeypress="return false;" /></td> <td><img src="img/Asus.jfif" width = "100" height = "100"></td>
+      </tr>
+       <tr>
+        <th scope = "row"> Souri: </th>
+          <td> 21.99$ </td>
+         <td><input type="number" id= "quaS" min="0" max="15" 
+ value="0" step="1" onkeypress="return false;" /></td> <td><img src="img/souri.jfif" width = "100" height = "100"> </td>
+      </tr> 
+      <tr>
+        <th scope = "row"> Clavier: </th>
+         <td> 39.99$ </td>
+         <td><input type="number"  id= "quaC" min="0" max="15" 
+ value="0" step="1" onkeypress="return false;" /></td> 
+     <td> <img src="img/Clavier.jfif" width = "100" height = "100">  </td>
+      </tr> 
+      <tr>
+        <th scope = "row"> Moniteur : </th>
+        <td> 278$ </td>
+         <td><input type="number"  id= "quaM" min="0" max="15" 
+ value="0" step="1" onkeypress="return false;" /> <td><img src="img/moniteur.jfif" width = "100" height = "100"> </td>
+      </tr>
+ 
+
+
+  
+    </table>
+  
+  
+  <!-- Radio button pour les taxes -->
+ <br><label for="Provience"> Tu vie ou? </label>
+     <br><input type="radio" name="Province" id="province"   
+ value="Ontario">Ontairo 
+      <input type="radio" name="Province" id="province" 
+ value="Quebec">Quebec 
+  
+  <!-- Radio button pour les frais de service -->
+ <br><label for="service"> Quelle service veut tu? </label>
+     <br><input type="radio" name="service" id="frais" 
+ value="express"> Express 2-3 jour (10$ )
+      <input type="radio" name="service" id="frais" 
+ value="frais">normal 5-7 jour (3$) 
+  
+  <!-- Button pour aller au chario -->
+  <br><br> <input type="button" id="btCha" value="Comfirmer ton 
+ cahrio" onclick="vrPix()"</input> 
+  
+  
+  <br><br> <div id = "affichePrix"> 
+ </div>
+  
+
+ <!-- Comment d'argent il doit nous donner --> 
+  <br> <label for="money">  Argent a rendre : </label>
+  <br> <input type="number" id="money"  />
+ <!-- Button pour remdre -->
+  <input type="button" id="btR" value="donner l'argent" 
+ onclick="RendreArgent()"</input> 
+ 
+ <br> <div id  = "afficheMoney"> </div>  
+  <script src="java\commerce.js"></script>
+   <h2> <a href="/index.html"/> &larr; </h2>
+</body>
+
+</html>

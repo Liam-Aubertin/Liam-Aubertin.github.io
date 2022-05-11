@@ -1,0 +1,20 @@
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+}th {
+  border : 1px solid ;
+  padding : 5px ;
+}
+table {
+  border-collapse : collapse ;
+  border : 2px solid ;
+  letter-spacing : 2px ;
+}
+th[scope = "col"] { 
+background-color : grey ; 
+}
+body{
+background-color: #d9d9d9;
+}
